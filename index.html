@@ -3,23 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Tailwind add-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!--font awsome cdn-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!--DaisyUI cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 
     <link rel="stylesheet" href="styles.css">
 
     <title>Practice portfolio site 1</title>
 </head>
 
-<body>
-    <header class="header">
+<body class="">
+    <header class="header max-w-full flex items-center gap-4 bg-[#FFF8F3]">
+        <div class="ml-5">
+            <img src="images/developer.png" alt="" class="mt-2">
+        </div>
+        <div class="mx-auto">
+            <nav class="header_nav flex items-center justify-between mt-5 mx-auto">
+                <h2 class="header_nav_h2">Ma<span class="header_nav_h2_span">r</span>y</h2>
 
+                <div class="header_nav_div1 flex items-center mr-9">
+                    <h5 class="header_nav_div1_txt"><a class="header_nav_div1_txt" href="">Portfolio</a></h5>
+                    <h5 class="header_nav_div1_txt"><a class="header_nav_div1_txt" href="">Blog</a></h5>
+                    <button class="header_nav_div1_btn btn_style">Hire Me</button>
+                </div>
+            </nav>
+
+            <div class="header_banner flex items-center justify-between mt-8 mx-auto">
+                <div class="banner_div1">
+                    <h1 class="font-bold text-[45px] text-gray-700 mb-3">Hi, I  am</h1>
+                    <h1 class="font-bold text-[85px] mb-3">Mary Hardy</h1>
+                    <p class="text-[18px] text-gray-500 mb-3">Shot what able cold new see hold.Friendly as an betrayed formerly he. 
+                        <br>Morning because as to society behaved moments.</p>
+                    <div class="flex items-center gap-3">
+                        <button class="bg-orange-500 text-white text-[20px] p-3.5 rounded-lg px-9"><i class="fa-solid fa-download"></i> Download CV</button>
+                        <button class="bg-white border-2 border-orange-500 text-[20px] text-orange-500 p-3.5 rounded-lg px-9"><i class="fa-solid fa-phone"></i> Contact</button>
+                    </div>
+                </div>
+                <div class="banner_div2 bg-[url('images/header_bg.png')] bg-no-repeat">
+                    <img src="images/hardy.png" alt="" class="">
+                </div>
+            </div>
+        </div>
+        
     </header>
 
-    <main class="main">
+    <main class="main bg-[#FFFFFF]">
 
+        <!--About me-->
+        <div class="abt_out flex justify-center items-center bg-[#FFF8F3] p-15 mt-30 mx-20 rounded-lg">
+            <div class="abt bg-[#FFFFFF] p-7 rounded-lg">
+                <h1 class="font-bold text-[35px] flex items-center justify-center mb-5">About Me</h1>
+                <p class="text-gray-500 text-[20px] mb-5">I, m a designer & developer with a passion for web design. I enjoy developing simple, clean and 
+                    <br>slick websites that provide real value to the end user. Thousands of clients have procured 
+                    <br>exceptional resulfs while working with me. Delivering work within time and budget which meets 
+                    <br>clients requirements in our mata.</p>
+                <div class="flex items-center justify-between">
+                    <div class="">
+                        <h2 class="text-gray-500 text-[20px] flex items-center justify-center">Name:</h2>
+                        <h2 class="text-gray-700 text-[20px] font-bold flex items-center justify-center">Mary Hardy</h2>
+                    </div>
+                    <div class="">
+                        <h2 class="text-gray-500 text-[20px] flex items-center justify-center">Email:</h2>
+                        <h2 class="text-gray-700 text-[20px] font-bold flex items-center justify-center">info@gmail.com</h2>
+                    </div>
+                    <div class="">
+                        <h2 class="text-gray-500 text-[20px] flex items-center justify-center">Date of Birth:</h2>
+                        <h2 class="text-gray-700 text-[20px] font-bold flex items-center justify-center">11 November 1987</h2>
+                    </div>
+                    <div class="">
+                        <h2 class="text-gray-500 text-[20px] flex items-center justify-center">From:</h2>
+                        <h2 class="text-gray-700 text-[20px] font-bold flex items-center justify-center">Los Angeles, USA</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--What do i do-->
+        <div class="mt-25">
+            <h1 class="font-bold text-[35px] flex items-center justify-center mb-7">What I do</h1>
+            <p class="flex items-center justify-center text-gray-500 text-[18px]">I have more than 10 years experience building software for clients all over the world. Below is a quick 
+                <br>overview of my main technical skill sets and technologies i use. Want to find out more about my experience? 
+                <br>Check out my online resume and project portfolio.</p>
+            
+                <div class="cards flex items-center justify-between mx-40 mt-12">
+                    <div class="bg-white p-5 shadow-gray-300 shadow-lg">
+                        <img src="images/icons/js.png" alt="">
+                        <h1 class="text-[20px] font-bold mt-5">Vanilla JavaScript</h1>
+                        <p class="text-[16px] text-gray-500 mt-5">List skill/technologies 
+                            <br>here. You can change the 
+                            <br>icon above to any of the 
+                            <br>1500+ FontAwesome 5
+                            <br> free icons available. 
+                            <br>Aenean commodo ligula 
+                            <br>eget dolor.</p>
+                    </div>
+                    <div class="bg-white p-5 shadow-gray-300 shadow-lg">
+                        <img src="images/icons/react.png" alt="">
+                        <h1 class="text-[20px] font-bold mt-5">React</h1>
+                        <p class="text-[16px] text-gray-500 mt-5">List skill/technologies 
+                            <br>here. You can change the 
+                            <br>icon above to any of the 
+                            <br>1500+ FontAwesome 5
+                            <br> free icons available. 
+                            <br>Aenean commodo ligula 
+                            <br>eget dolor.</p>
+                    </div>
+                    <div class="bg-white p-5 shadow-gray-300 shadow-lg">
+                        <img src="images/icons/nodejs.png" alt="">
+                        <h1 class="text-[20px] font-bold mt-5">Node.js</h1>
+                        <p class="text-[16px] text-gray-500 mt-5">List skill/technologies 
+                            <br>here. You can change the 
+                            <br>icon above to any of the 
+                            <br>1500+ FontAwesome 5
+                            <br> free icons available. 
+                            <br>Aenean commodo ligula 
+                            <br>eget dolor.</p>
+                    </div>
+                    <div class="bg-white p-5 shadow-gray-300 shadow-lg">
+                        <img src="images/icons/mongo.png" alt="">
+                        <h1 class="text-[20px] font-bold mt-5">MongoDB</h1>
+                        <p class="text-[16px] text-gray-500 mt-5">List skill/technologies 
+                            <br>here. You can change the 
+                            <br>icon above to any of the 
+                            <br>1500+ FontAwesome 5
+                            <br> free icons available. 
+                            <br>Aenean commodo ligula 
+                            <br>eget dolor.</p>
+                    </div>
+                </div>
+        </div>
+
+        <!--Summary-->
+        <div class="summary">
+            <h1 class="text-[35px] font-bold mt-20 flex items-center justify-center">A summary of My Resume</h1>
+            
+            <div class="">
+            <div class="left">
+
+            </div>
+        </div>
+        <button class="bg-orange-500 text-white text-[20px] p-3.5 rounded-lg px-9"><i class="fa-solid fa-download"></i> Download CV</button>
+        </div>
+        
     </main>
 
     <footer class="footer">
-        
+
     </footer>
     
 </body>

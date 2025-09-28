@@ -1,0 +1,49 @@
+/* general */
+@import "tailwindcss";
+
+.open-sans-normal{
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+*{
+    font-family: open sans;
+}
+
+.btn_style{
+    background-color: #FD6E0A;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-family: Open Sans;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 55px;
+}
+
+/* header nav */
+
+.header_nav_h2_span{
+    color: #FD6E0A;
+}
+
+.header_nav_h2{
+    font-size: 45px;
+    font-weight: 750;
+}
+
+
+.header_nav_div1_txt{
+    padding-right: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+/* main */
+.main{
+    background-color: #FFFFFF;
+}
+
